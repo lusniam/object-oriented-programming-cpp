@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>615</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Konfigurator PC</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="CPUBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>-</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Intel Core I3-13100</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Intel Core I5-13500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Intel Core I5-13600K (OC)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Intel Core I7-13700</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Intel Core I7-13700K (OC)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Intel Core I9-13900K (OC)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AMD Ryzen 5 7600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AMD Ryzen 7 7700</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AMD Ryzen 7 7800X3D</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AMD Ryzen 9 7900</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AMD Ryzen 9 7950X3D</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="GPUBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>60</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>-</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Grafika zintegrowana</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NVIDIA GeForce RTX 3060 Ti</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NVIDIA GeForce RTX 3070 Ti</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NVIDIA GeForce RTX 4060 Ti</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NVIDIA GeForce RTX 4070 Ti</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NVIDIA GeForce RTX 4080</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NVIDIA GeForce RTX 4090</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="CPULabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Procesor:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="GPULabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Karta graficzna</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MBLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Płyta główna</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="RAMSlider">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>4</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="MBBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>-</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Gigabyte B760</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gigabyte Z690 (OC)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gigabyte X670</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="RAMLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pamięć RAM:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SSDLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dysk SSD:</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="SSDSlider">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>170</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="HDDLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>200</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dysk HDD</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="HDDSlider">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>200</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="PSUSlider">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>230</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PSULabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zasilacz</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="CaseBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>260</y>
+      <width>131</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Kolor obudowy</string>
+    </property>
+    <widget class="QRadioButton" name="CaseButtonBlack">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Czarny</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="CaseButtonWhite">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Biały</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="CaseButtonPurple">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Fioletowy</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QCheckBox" name="WifiCheck">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>140</y>
+      <width>78</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+ 0 zł</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WifiLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>140</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Karta sieciowa Wi-Fi</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="BtLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>170</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Karta Bluetooth</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="BtCheck">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>170</y>
+      <width>78</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+ 0 zł</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DriveLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>200</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Napęd optyczny</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="DriveCheck">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>200</y>
+      <width>78</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+ 0 zł</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SummaryButton">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>320</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Podsumowanie</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="CoolingBox">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>40</y>
+      <width>151</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>-</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Oryginalne producenta</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Powietrzne</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Wodne</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="CoolingLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chłodzenie procesora</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="OSBox">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>270</y>
+      <width>141</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="placeholderText">
+     <string>-</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Brak</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Windows 10 Home</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Windows 10 Pro</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Windows 11 Home</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Windows 11 Pro</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="OSLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>240</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>System operacyjny</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FanLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>80</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Liczba wentylatorów</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="FanSlider">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>110</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>7</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RAMValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>140</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SSDValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>170</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="HDDValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>200</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PSUValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>230</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CoolingPriceLabel">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>41</y>
+      <width>49</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FanNumberLabel">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>80</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FanPriceLabel">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>80</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="OSPriceLabel">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>270</y>
+      <width>49</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RAMPriceLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>140</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SSDPriceLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>170</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="HDDPriceLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>200</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PSUPriceLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>230</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CPUPriceLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>30</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="GPUPriceLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>70</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MBPriceLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>110</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Bok1Edit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>400</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Bok2Edit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>400</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Bok3Edit">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>400</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="PoleEdit">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>400</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Oblicz">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>400</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Oblicz</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Pole">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>380</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pole trójkąta</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="TrojkatBox">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>340</y>
+      <width>151</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>3 boki</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Podstawa + wysokość</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="TrojaktInfo">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>320</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sposób obliczenia pola:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Bok1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>380</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pierwszy bok</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Bok2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>380</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Drugi bok</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Bok3">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>380</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Trzeci bok</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>615</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionNowa_konfiguracja"/>
+    <addaction name="actionZapisz_konfiguracj"/>
+    <addaction name="actionWczytaj_konfiguracj"/>
+    <addaction name="actionAutor"/>
+    <addaction name="actionWyj_cie"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <action name="actionNowa_konfiguracja">
+   <property name="text">
+    <string>Nowa konfiguracja</string>
+   </property>
+  </action>
+  <action name="actionZapisz_konfiguracj">
+   <property name="text">
+    <string>Zapisz konfigurację</string>
+   </property>
+  </action>
+  <action name="actionAutor">
+   <property name="text">
+    <string>Autor</string>
+   </property>
+  </action>
+  <action name="actionWyj_cie">
+   <property name="text">
+    <string>Wyjście</string>
+   </property>
+  </action>
+  <action name="actionWczytaj_konfiguracj">
+   <property name="text">
+    <string>Wczytaj konfigurację</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

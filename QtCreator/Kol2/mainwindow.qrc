@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>black.jpg</file>
+        <file>purple.jpg</file>
+        <file>white.jpg</file>
+        <file>icon.png</file>
+    </qresource>
+</RCC>
