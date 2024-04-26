@@ -1,1 +1,1 @@
-Files for 'Object-Oriented Programming In C++', writen in C++
+Files for `Object-Oriented Programming In C++` for college, writen in C++
